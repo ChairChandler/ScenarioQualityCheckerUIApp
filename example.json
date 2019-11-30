@@ -1,0 +1,51 @@
+{
+  "title": "Dodanie ksiazki",
+  "actors": ["Bibliotekarz"],
+  "systemActor": "System",
+
+  "steps": [
+      {
+        "name": "Bibliotekarz wybiera opcje dodania nowej pozycji ksiazkowej"
+      },
+      {
+        "name": "Wyswietla sie formularz."
+      },
+      {
+        "name": "Bibliotekarz podaje dane ksiazki."
+      },
+      {
+        "name": "IF: Bibliotekarz pragnie dodac egzemplarze ksiazki",
+        "steps": [
+            {
+                "name": "Bibliotekarz wybiera opcje definiowania egzemplarzy"
+            },
+            {
+                "name": "System prezentuje zdefiniowane egzemplarze"
+            },
+            {
+              "name": "FOR EACH egzemplarz:",
+              "steps": [
+                        {
+                                "name": "Bibliotekarz wybiera opcje dodania egzemplarza"
+                        },
+                        {
+                                "name": "System prosi o podanie danych egzemplarza"
+                        },
+                        {
+                                "name": "Bibliotekarz podaje dane egzemplarza i zatwierdza."
+                        },
+                        {
+                                "name": "System informuje o poprawnym dodaniu egzemplarza i prezentuje zaktualizowana liste egzemplarzy."
+                        }
+                ]
+            }
+          ]
+      },
+      {
+                "name": "Bibliotekarz zatwierdza dodanie ksiazki."
+      },
+      {
+        "name": "System informuje o poprawnym dodaniu ksiazki."
+      }
+    ]
+}
